@@ -39,4 +39,36 @@ main {
     top: 0;
     left: 450px;
     height: 100vh;
+    background-color: #f9fafb;
+}
+
+#form {
+    background-color: white;
+    box-shadow: 0px 3px 3px rgb(153, 153, 153);
+    padding: 24px 50px 32px;
+}
+
+#form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    color: rgb(75, 75, 75);
+    width: 600px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form-field input {
+    width: 250px;
+}
+
+.form-field input {
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    height: 24px;
+    margin-top: 3px;
 }

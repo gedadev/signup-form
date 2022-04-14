@@ -16,13 +16,13 @@
         <p id="credits">Photo by <a href="https://unsplash.com/@lingxiansu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank">Ling Xian Su</a> on <a href="https://unsplash.com/s/photos/sakura?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank">Unsplash</a></p>
     </header>
     <main>
-        <div class="title">
+        <div id="description">
             <h2>Sunt elit pariatur pariatur anim officia magna. Anim proident laborum amet pariatur quis cillum dolor deserunt non amet eiusmod irure amet.</h2>
             <h2>You know you want to</h2>
         </div>
-        <div class="form">
+        <div id="form">
             <h3>Let's do this!</h3>
-            <form action="#" method="post">
+            <form action="#" method="post" id="signup-form">
                 <div class="form-field">
                     <label for="first-name">FIRST NAME</label>
                     <input type="text" name="first-name" id="first-name">
@@ -47,12 +47,11 @@
                     <label for="confirm-pass">CONFIRM PASSWORD</label>
                     <input type="password" name="confirm-pass" id="confirm-pass">
                 </div>
-
-                <div class="form-field">
-                    <input type="submit" value="Create Account">
-                </div>
-                <p>Already have an account? <a href="">Log in</a></p>
             </form>
+        </div>
+        <div class="form-submit">
+            <button type="submit" form="signup-form" value="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </main>
 </body>
