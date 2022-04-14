@@ -39,7 +39,7 @@ header {
 }
 
 main {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 40vw;
     height: 100vh;
@@ -82,6 +82,15 @@ main {
 .error {
     border: 1px solid #dd5757 !important;
     outline: none;
+}
+
+#error-msg {
+    display: none;
+}
+
+.error-msg {
+    display: block !important;
+    color: #dd5757;
 }
 
 @media(max-width: 1200px) {

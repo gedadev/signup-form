@@ -41,7 +41,8 @@
                 </div>
                 <div class="form-field">
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" class="error">
+                    <input type="password" name="password" id="password" class="">
+                    <span id="error-msg" class="">*Passwords do not match!</span>
                 </div>
                 <div class="form-field">
                     <label for="confirm-pass">CONFIRM PASSWORD</label>
@@ -54,5 +55,23 @@
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </main>
+
+    <script>
+        const pass = document.querySelector('#password');
+        const confirmPass = document.querySelector('#confirm-pass');
+        const errorMsg = document.querySelector('#error-msg');
+
+        confirmPass.addEventListener('keyup', () => {
+            if(pass.value !== confirmPass.value) {
+                pass.className = 'error';
+                confirmPass.className = 'error';
+                errorMsg.className = 'error-msg';
+            } else {
+                pass.className = '';
+                confirmPass.className = '';
+                errorMsg.className = '';
+            }
+        });
+    </script>
 </body>
 </html>
