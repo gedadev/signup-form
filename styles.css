@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Secular+One&display=swap');
 
 *{
-
+    
     font-family: 'Roboto', 'sans-serif';
 }
 
@@ -15,6 +15,38 @@ header {
     width: 40vw;
     display: flex;
     justify-content: center;
+}
+
+
+@media(max-width: 1000px) {
+    header {
+        background-image: url(ling-xian-su-7FV4bEljHe8-unsplash.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    #title {
+        height: 10vh !important;
+        width: 100vw !important;
+        position: absolute;
+        top: 0;
+        margin: 0 !important;
+    }
+    #credits { 
+        position: absolute !important;
+        font-size: 6px !important;
+    }
+    main {
+        position: absolute;
+        top: 10vh !important;
+        left: 0 !important;
+        background-color: #e9f9ff;
+    }
 }
 
 #credits {
